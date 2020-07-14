@@ -1,0 +1,50 @@
+/* pages/classic/classic.wxss */
+.container{
+     /*
+     flex知识点：
+
+        display属性 在弹性盒子display：flex下，display:属性值为inline-block、inline、block  是无效的
+
+        1、flex布局下的 item排列方式flex-direction： column-reverse、row-reverse、row、column
+        其中column-reverse、row-reverse、属性值会让对齐方式颠倒   设置height: 400px;看和模型就可以看出颠倒效果
+        view组件宽高不指定的话 宽度取100%   高度自适应   高度根据容器里面填充的元素自动撑开
+
+        2、flex布局下的 item的对齐方向justify-content:flex-end（下右）、flex-start（上左）、center(居中)、space-between（平均分布）、space-around（等距分布）
+        justify-content受flex-direction影响--->flex-end（上左）、flex-start（下右）
+       
+        3、flex布局下的 item的对齐/设置样式align-items: center、flex-end、flex-start、baseline(让子元素里面的文字以基线为标准对齐，参考的是左上元素的文字，从而影响子元素的对齐)、stretch（在子元素没设置高度的时候自动填满高度）
+
+        4、item宽度设置总和大于物理机宽度，又没有设置换行的时候，item会按自己的份数平均分布外层给的宽度，并不超过物理机宽度。
+        如果想保留item的真实宽度，产生换行效果：
+        flex布局下的 item平均分配换行效果：flex-wrap:nowrap、wrap、wrapreverse
+        但是当外层高度大于item的高度时，会出现间距，消除间距就要设置好外层高度。
+
+        5、轴：取决于flex-direction的属性值,column（列）的时候是垂直的主轴从上到下方向；column-reverse主轴是从下到上方向
+        主轴： justify-content 表现成y轴 
+        交叉轴： align-items 表现成x轴
+        
+        flex-direction的属性值,row（行）的时候
+         主轴： justify-content 表现成x轴 
+        交叉轴： align-items 表现成y轴
+
+       */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height:200px;
+    background: rgb(156, 111, 130)
+
+}
+.chun{ 
+    /* 
+        display: inline-block;   在弹性盒子flex下  属性为inline-block、inline、block  是无效的
+         
+    */
+    width: 150px;
+    height: 100px;
+}
+.color1{background: #aabbcc}
+.color2{background: rgba(170, 182, 187, 0.733)}
+.color3{background: #ddb086}

@@ -1,0 +1,5 @@
+<!--pages/compents/like/index.wxml-->
+<view class="container" >
+   <image class="" bind:tap="change" src="{{like?onUrl:offUrl}}"></image>
+   <text>{{count}}</text>
+</view>

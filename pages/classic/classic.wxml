@@ -1,0 +1,13 @@
+<!--pages/classic/classic.wxml-->
+<view class="container" >
+    <!-- view组件宽高不指定的话 宽度取100%   高度自适应   高度根据容器里面填充的元素自动撑开 -->
+    <view class="chun color1">
+        1
+    </view>
+    <view class="chun color2">
+        2
+    </view>
+    <view class="chun color3">
+        3
+    </view>
+</view>
