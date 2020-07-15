@@ -1,3 +1,1 @@
-<!--pages/first/first.wxml-->
-<text>pages/first/first.wxml</text>
-<v-like>1</v-like>
+<v-like></v-like>
