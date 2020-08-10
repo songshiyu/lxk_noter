@@ -5,6 +5,7 @@
     flex-direction: row;
     /* , */
     padding: 10rpx;
+    /* width: 90rpx; 固定宽度，防止跳来跳去*/
 }
 .container image{
     height: 28rpx;

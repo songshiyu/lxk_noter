@@ -13,7 +13,7 @@ class HTTP  {
             wx.request({
                 url:config.url+params.url,
                 header:{
-                    'content-type':'appliction/json',
+                    'content-type':'application/json',
                     'AppKey':config.AppKey
                 },
                 method:params.method,
@@ -22,7 +22,11 @@ class HTTP  {
                     // console.log(typeof(res.statusCode))
                     console.log(res.data)
                     if (res.statusCode.toString().startsWith('2')) {
-                            params.success(res.data)
+                      
+                            //代替if的判断写法，判断回调函数里面有没有params.success  是不是空  如果是空不会执行后面的代码
+                            params.success && params.success(res.data)
+                         
+                       
                     } else {
                         this._show_err(res.data.error_code)
                     }

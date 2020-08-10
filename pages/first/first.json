@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "v-like":"/compents/like/index"
+    "v-like":"/compents/like/index",
+    "v-content":"/compents/first/movie/index",
+    "v-epsoide":"/compents/epsoide/index"
   }
 }

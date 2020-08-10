@@ -1,1 +1,6 @@
-<v-like></v-like>
+<view class="header">
+    <v-epsoide class="epsoide" index="{{first.index}}"></v-epsoide>
+    <v-like class="like" bind:like="onLike" like="{{first.like_status}}" count="{{first.fav_nums}}" />
+</view>
+
+<v-content content="{{first.content}}" img="{{first.image}}"></v-content>

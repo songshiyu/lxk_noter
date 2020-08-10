@@ -1,35 +1,40 @@
 // pages/first/first.js
-import {HTTP} from  '../../util/http'
-let http =new HTTP()
+import {FirstModel} from  '../../models/first.js';
+import {LikeModel} from  '../../models/like.js';
+let firstModel =new FirstModel();
+let likeModel =new LikeModel();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    first:null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    http.request({
-        url:'classic/latest',
-       success:(res)=>{
-        //console.log(res)
-        //  if (res.code=='200') {
-        //    
-        //  }
-       }
-
-      })
+    firstModel.getLatest((res)=>{
+      console.log(res)
+        this.setData({
+          first:res
+        })
+        console.log(this.data)
+    })
+  },
+  onLike:function(event){
+    console.log(event)
+    console.log(event)
+    let behavior = event.detail.behavior
+    likeModel.like(behavior,this.data.first.id,this.data.first.type)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+onReady: function () {
 
   },
 

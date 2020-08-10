@@ -1,0 +1,24 @@
+/* compents/first/movie/index.wxss */
+.first-container{
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.first-img{
+  width: 750rpx;
+  height: 500rpx;
+}
+.tag{
+    width: 46rpx;
+    height: 142rpx;
+    position: relative;
+    /* 相对当前位置有一定偏移 */
+    right: 310rpx;
+    bottom: 58rpx;
+}
+.content{
+    font-size: 36rpx;
+    max-width: 550rpx;
+    /* 字数长了或者短了，会显示不居中，或者折行难看的现象，这个属性针对剧中换行解决自适应宽度 */
+}
+

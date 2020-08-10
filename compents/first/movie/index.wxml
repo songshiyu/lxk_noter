@@ -1,0 +1,6 @@
+<!--compents/first/movie/index.wxml-->
+<view class="first-container">
+    <image src="{{img}}" class="first-img" />
+    <image src="./images/dianying@.png" class="tag" />
+    <text class="content">{{content}}</text>
+</view>
