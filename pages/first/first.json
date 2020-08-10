@@ -2,6 +2,7 @@
   "usingComponents": {
     "v-like":"/compents/like/index",
     "v-content":"/compents/first/movie/index",
-    "v-epsoide":"/compents/epsoide/index"
+    "v-epsoide":"/compents/epsoide/index",
+    "v-navi":"/compents/navi/navi"
   }
 }

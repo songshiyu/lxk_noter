@@ -1,0 +1,6 @@
+<!--compents/navi/navi.wxml-->
+<view class="container">
+    <image class="icon" src="{{latest?leftDisStr:leftStr}}"></image>
+    <text class="title">{{title}}</text>
+    <image class="icon" src="{{first?rightDisStr:rightStr}}"></image>
+</view>

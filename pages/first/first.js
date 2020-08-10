@@ -10,6 +10,8 @@ Page({
    */
   data: {
     first:null,
+    latest:true,
+    first:false
   },
 
   /**
